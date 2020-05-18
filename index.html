@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilo1.css">
+    <link rel="stylesheet" href="libs/MaterialDesign/css/materialdesignicons.css">
+    <link rel="stylesheet" href="libs/sweetalert2-8.13.0/package/dist/sweetalert2.css">
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+<center>
+        <div class="container">
+
+            <h1 class="display-5">
+                <p class="text-success"><b> <img width="60" height="60" src="img/logo.png"> WalkDogs</b>
+                </p>
+            </h1>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                    Login
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"><img class="card-img-top"></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 offset-md-2 col-md-8">
+                                        <h4 class="text-danger text-center"> Login do Usuário</h4>
+                                        <form action="verificaLogin.php" method="POST">
+                                            <div class="form-group text-left">
+                                                <label>Login:</label>
+                                                <input class="form-control" type="email" name="login" class="form-control" placeholder="nome@exemplo.com">
+                                            </div>
+                                            <div class="form-group text-left">
+                                                <label>Senha:</label>
+                                                <input class="form-control" type="password" name="senha" class="form-control" placeholder="......">
+                                            </div>
+                                            <div class="row">
+                                                <div class="col col-xs-12 text-left">
+                                                    <input class="btn btn-outline-success btn-sm btn-lg btn-add" type="submit" name="logar" value="Logar">
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <br/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+                    Cadastrar
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel1"><img class="card-img-top"></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 offset-md-2 col-md-8">
+                                        <h4 class="text-danger text-center">Cadastro de Usuário</h4>
+                                        <form action="cadastro.php" method="POST">
+                                            <div class="form-group text-left">
+                                                <label>Nome do Usuario</label>
+                                                <input class="form-control" type="text" name="usuarios">
+                                            </div>
+                                            <div class="form-group text-left">
+                                                <label>Login do Usuario</label>
+                                                <input class="form-control" type="email" name="login" class="form-control" placeholder="nome@exemplo.com">
+                                            </div>
+                                            <div class="form-group text-left">
+                                                <label>Senha do Usuario</label>
+                                                <input class="form-control" type="password" name="senha" class="form-control" placeholder="......">
+                                            </div>
+                                            <div class="row">
+                                                <div class="col col-xs-12 text-left">
+                                                    <input class="btn btn-outline-primary btn-sm btn-lg" type="submit" name="cadastrar" value="Cadastrar" id="Logar" onclick="funcao1()">
+                                                </div>
+                                            </div>
+                                        </form>
+                                       
+                                        <br/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    <footer>
+
+            <a class="navbar-brand text-center text-success">Direitos reservados a(o) WalkDogs <i class="mdi mdi-dog mdi-24px text-warning"></i></a>
+
+    </footer>
+</center>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="libs/sweetalert2-8.13.0/package/dist/sweetalert2.js">
+
+</body>
+
+</html>
